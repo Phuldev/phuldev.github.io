@@ -43,7 +43,7 @@ padding:100px 0px 45px 0px;
     padding: 0 80px;
     margin: auto;
 }
-.about{
+.about, .services{
 background:var(--body-color);
 }
 .about, .services, .skills, .teams, .contact, footer{
@@ -128,7 +128,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color:var(--sandybrown);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -272,7 +272,7 @@ background-color:var(--sandybrown);
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background:var(--body-color);
 }
 .services .title::before,
 .teams .title::before{
