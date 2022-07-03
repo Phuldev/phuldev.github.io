@@ -234,9 +234,13 @@ background-color:var(--sandybrown);
 .about .about-content .left img{
     height: 400px;
     width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     object-fit:cover;
-    border-radius: 6px;
+    border-radius:50%;
+    transition: all 0.3s ease;
+}
+.about .about-content .left:hover img{
+    box-shadow: rgb(0 0 0 / 45%) -2px 1px 10px 3px;
+
 }
 .about .about-content .right{
     width: 55%;
