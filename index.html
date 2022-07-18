@@ -45,10 +45,10 @@
             </div>
 
             <div class="col-lg-10 bg-dark position-relative"style="height:100vh;"id="particles-js">
-                <div class="position-absolute top-50 start-50 translate-middle">
+                <!-- <div class="position-absolute top-50 start-50 translate-middle">
                     <h1 class="text-white text-center pt-5">Phuldev Mandal</h1>
                     <p class="mb-0 text-white fs-4" >I'm a <span id="data" class="text-danger fw-bold"></span></p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@
     <div class="container">
         <div class="text-center text-dark py-3">
             <h2>About Us</h2>
-            <p>I'm a creative webdeveloper</p>
+            <p>I'm a creative <span id="data"></span></p>
         </div>
         <div class="row gy-2 gx-2">
             <div class="col-md-4 align-items-stretch">
@@ -187,7 +187,8 @@
         typeSpeed:120 ,
         loop:true
     });
-
+</script>
+<script>
     //date
     const d = new Date();
     document.getElementById("@date").innerHTML = d.getFullYear();
