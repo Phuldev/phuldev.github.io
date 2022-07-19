@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phuldev Mandal</title>
-    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <link rel="stylesheet" href="../style.css">
     <link rel="apple-touch-icon" sizes="192x192" href="../favicon_package/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package/favicon-16x16.png">
@@ -17,25 +17,25 @@
 
 <section>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-2 border-end border-3" style="height:100vh; background-color:#141619;">
+        <div class="">
+            <div class="border-end border-3 aside">
                 <div class="text-center">
                     <img src="./images/dev.jpeg" class="rounded-circle mt-3 h-50 w-50" alt="">
                     <div class="text-white py-2"><h4>Phuldev Mandal</h4></div>
                     <div class="d-flex justify-content-center my-2">
-                        <a href="#" class="btn btn-sm btn-outline-primary ms-2"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="btn btn-sm btn-outline-danger ms-2"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="btn btn-sm btn-outline-primary ms-2"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="btn btn-sm btn-primary ms-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="btn btn-sm btn-danger ms-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-primary ms-2"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#" class="btn btn-sm btn-outline-light ms-2"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-                <div>
-                    <ul class="text-white p-5 rounded-2 h-100 list-group-flush">
+                <div class="pmNav">
+                    <ul class="text-white p-5 rounded-2 h-100 list-group-flush ">
                         <!-- <li class="list-group-item mb-3"><a class="text-decoration-none" href="#"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li> -->
-                        <li class="list-group-item mb-3"><a class="text-decoration-none" href="#about"><i class="fa-solid fa-circle-user"></i>&nbsp;About</a></li>
-                        <li class="list-group-item mb-3"><a class="text-decoration-none" href="#"><i class="fa-solid fa-file-chart-column"></i>&nbsp;Resume</a></li>
-                        <li class="list-group-item mb-3"><a class="text-decoration-none" href="#"><i class="fa-brands fa-servicestack"></i>&nbsp;Services</a></li>
-                        <li class="list-group-item mb-3"><a class="text-decoration-none" href="#"><i class="fa-solid fa-id-card-clip"></i>&nbsp;Contact</a></li>
+                        <li class="list-group-item mb-3"><a href="#about"><i class="fa-solid active fa-circle-user"></i>&nbsp;About</a></li>
+                        <li class="list-group-item mb-3"><a href="#"><i class=" active fa-solid fa-file-chart-column"></i>&nbsp;Resume</a></li>
+                        <li class="list-group-item mb-3"><a href="#"><i class=" active fa-brands fa-servicestack"></i>&nbsp;Services</a></li>
+                        <li class="list-group-item mb-3"><a href="#"><i class=" active fa-solid fa-id-card-clip"></i>&nbsp;Contact</a></li>
                     </ul>
                 </div>
                 <div class="text-center text-white pt-5">
@@ -43,8 +43,7 @@
                     <p class="mb-0">Design By Phuldev Mandal</p>
                 </div>
             </div>
-
-            <div class="col-lg-10 bg-dark position-relative"style="height:100vh;"id="particles-js">
+            <div class="bg-dark position-relative main-body"style="height:100vh;"id="particles-js">
                 <div class="position-absolute top-50 start-50 translate-middle">
                     <h1 class="text-white text-center pt-5">Phuldev Mandal</h1>
                     <p class="mb-0 text-white fs-4" >I'm a <span id="data" class="text-danger fw-bold"></span></p>
@@ -54,7 +53,7 @@
     </div>
 </section>
 
-<section style="height:100vh;" id="about">
+<section id="about">
     <div class="container">
         <div class="text-center text-dark py-3">
             <h2>About Us</h2>
@@ -191,7 +190,7 @@
 <script>
 //typed
 var typed = new Typed('#data', {
-    strings: ['Web Developer', 'Frontend Developer', 'And', 'Laravel Developer'],
+    strings: ['Website Under Construction','Thank You For Visiting My Website...'],
     BackSpeed: 120,
     typeSpeed: 120,
     loop: true
