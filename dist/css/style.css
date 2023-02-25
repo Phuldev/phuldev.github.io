@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    text-decoration:none;
+    list-style:none;
+    background-color:#0F172A;
+    height:100vh;
+}
+.social ul li{
+    height: 40px;
+    width: 40px;
+    border:1px solid white;
+    box-shadow: 0px 0px 8px 0px;
+    border-radius: 50%;
+    position: relative;
+}
+.social ul li a{
+color:white;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+transition:2s;
+}
+.social ul li:hover{
+background-color: aliceblue;
+}
+.social ul li:hover a{
+    color:#0F172A;
+}
+/*  */
+.profile{
+border-bottom:5px solid #ffffff;
+position: relative;
+}
+.profile .sun{
+position: absolute;
+top:0px;
+right:5px;
+color:#ffffff;
+font-size:50px;
+
+}

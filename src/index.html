@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/style.css">
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <!-- intro -->
+    <div class="container pt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-white">
+                <div class="bio text-capitalize">
+                    <span class="fs-3">Hello, it's me</span>
+                    <h3 class="fs-1">Phuldev Mandal</h3>
+                    <p class="fs-4">and I'am a <span class="typed2"></span></p>
+                    <div class="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt fugiat voluptate repudiandae
+                            dolores at repellat pariatur modi possimus dolore aliquam.</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <ul class="d-flex list-unstyled gap-4">
+                        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <a href="./about.html" class="btn btn-outline-info text-white fw-bold">About Me! </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile">
+                    <img src="../dist/img/profile.png" class="w-100" alt="">
+                    <span class="sun"><ion-icon name="sunny-outline"></ion-icon></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../dist/typed.js"></script>
+    <script>
+        var typed = new Typed(".typed2", {
+            strings: [
+                "Web Designer",
+                "Web Developer"
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
