@@ -43,6 +43,12 @@ right:5px;
 color:#ffffff;
 font-size:50px;
 }
+/*  */
+.MyIntroContent p{
+    text-align:justify;
+    line-height:1.5;
+    text-transform: capitalize;
+}
 
 /* About Me! */
 .side_body{
