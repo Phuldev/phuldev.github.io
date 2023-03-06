@@ -65,6 +65,7 @@ object-fit:cover;
 }
 .content_section{
     padding: 60px 40px;
+    height:100vh;
 }
 .section_title{
     margin-bottom: 50px;
@@ -125,11 +126,8 @@ object-fit:cover;
     color:#d0bb79;
 }
 .my_intro p{
-margin-top:20px;
 color:#8D8D8C;
-text-transform:capitalize;
 font-weight:400;
-line-height:1.5;
 }
 .btn_section{
 text-align:center;
@@ -142,4 +140,48 @@ border-radius:10px;
 }
 .phone{
 font-size:18px;
+}
+
+/* what i do */
+.wido{
+height:100vh;
+}
+.sectionHeadingIntro{
+ padding:25px;
+ margin:25px;
+ position: relative;
+}
+.HeAder{
+    text-transform: uppercase;
+    color:#ffff;  
+}
+.HeAder span{
+    color:#D0BB79;
+}
+.sectionHeadingIntro h3
+{
+    text-transform: uppercase;
+    color:#ffff;
+}
+.sectionHeadingIntro span{
+    color:#D0BB79;
+}
+.hrWido{
+border:1px dashed #D0BB79;
+margin-top:15px
+}
+/* .hrWido::before{
+position: absolute;
+content:'';
+border:1px solid #D0BB79;
+height:15px;
+width:15px;
+right:0;
+top:18%;
+border-radius:50%;
+} */
+.card-bg-dark{
+    background-color: #12151D;
+    color:#ffffff;
+    border-radius:0;
 }
