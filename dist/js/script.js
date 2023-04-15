@@ -1,0 +1,1 @@
+const title = document.getElementById("title").innerHTML = "Phuldev Mandal"
