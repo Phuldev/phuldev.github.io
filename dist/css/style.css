@@ -1,83 +1,97 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-body{
-    text-decoration:none;
-    list-style:none;
-    background-color:#0C0E16;
-    height:100vh;
+
+body {
+    text-decoration: none;
+    list-style: none;
+    background-color: #0C0E16;
+    height: 100vh;
 }
-.social ul li{
+
+.social ul li {
     height: 40px;
     width: 40px;
-    border:1px solid white;
+    border: 1px solid white;
     box-shadow: 0px 0px 8px 0px;
     border-radius: 50%;
     position: relative;
 }
-.social ul li a{
-color:white;
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-transition:2s;
+
+.social ul li a {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
 }
-.social ul li:hover{
-background-color: aliceblue;
+
+.social ul li:hover {
+    background-color: aliceblue;
 }
-.social ul li:hover a{
-    color:#0F172A;
+
+.social ul li:hover a {
+    color: #0F172A;
 }
+
 /*  */
-.profile{
-border-bottom:5px solid #ffffff;
-position: relative;
+.profile {
+    border-bottom: 5px solid #ffffff;
+    position: relative;
 }
-.profile .sun{
-position: absolute;
-top:0px;
-right:5px;
-color:#ffffff;
-font-size:50px;
+
+.profile .sun {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: #ffffff;
+    font-size: 50px;
 }
+
 /*  */
-.MyIntroContent p{
-    text-align:justify;
-    line-height:1.5;
+.MyIntroContent p {
+    text-align: justify;
+    line-height: 1.5;
     text-transform: capitalize;
 }
 
 /* About Me! */
-.side_body{
-height:100vh;
-position: relative;
-}
-.side_image{
-position: fixed!important;
-}
-.side_image img{
-width:100%;
-height:100vh;
-object-fit:cover;
-}
-.content_section{
-    padding: 60px 40px;
-    height:100vh;
-}
-.section_title{
-    margin-bottom: 50px;
+.side_body {
+    height: 100vh;
     position: relative;
 }
-.section_title h5{
+
+.side_image {
+    position: fixed !important;
+}
+
+.side_image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.content_section {
+    padding: 60px 40px;
+}
+
+.section_title {
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.section_title h5 {
     color: #eee;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
+
 .section_title h5 span {
     color: #d0bb79;
     font-size: 55px;
@@ -87,7 +101,8 @@ object-fit:cover;
     margin-right: 5px;
     padding: 0 5px;
 }
-.section_title h5 span:after{
+
+.section_title h5 span:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -98,7 +113,8 @@ object-fit:cover;
     opacity: .5;
     z-index: -1;
 }
-.section_title h3{
+
+.section_title h3 {
     font-size: 80px;
     font-weight: 800;
     letter-spacing: 30px;
@@ -112,76 +128,81 @@ object-fit:cover;
     opacity: .2;
     z-index: -1;
 }
-.my_intro
-{    
+
+.my_intro {
     text-align: center;
 }
-.my_intro h5{
-    color:#eee;
-    text-transform:capitalize;
-    font-weight:600;
-    line-height:2;
+
+.my_intro h5 {
+    color: #eee;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 2;
 }
-.my_intro h5 small{
-    color:#d0bb79;
+
+.my_intro h5 small {
+    color: #d0bb79;
 }
-.my_intro p{
-color:#8D8D8C;
-font-weight:400;
+
+.my_intro p {
+    color: #8D8D8C;
+    font-weight: 400;
 }
-.btn_section{
-text-align:center;
+
+.btn_section {
+    text-align: center;
 }
-.contant_me{
-background-color:#12141C;
-padding:40px 15px;
-margin:80px 0px;
-border-radius:10px;
+
+.contant_me {
+    background-color: #12141C;
+    padding: 40px 15px;
+    margin: 80px 0px;
+    border-radius: 10px;
 }
-.phone{
-font-size:18px;
+
+.phone {
+    font-size: 18px;
 }
 
 /* what i do */
-.wido{
-height:100vh;
+.sectionHeadingIntro {
+    padding: 25px;
+    margin: 25px;
+    position: relative;
 }
-.sectionHeadingIntro{
- padding:25px;
- margin:25px;
- position: relative;
-}
-.HeAder{
+
+.HeAder {
     text-transform: uppercase;
-    color:#ffff;  
+    color: #ffff;
 }
-.HeAder span{
-    color:#D0BB79;
+
+.HeAder span {
+    color: #D0BB79;
 }
-.sectionHeadingIntro h3
-{
+
+.sectionHeadingIntro h3 {
     text-transform: uppercase;
-    color:#ffff;
+    color: #ffff;
 }
-.sectionHeadingIntro span{
-    color:#D0BB79;
+
+.sectionHeadingIntro span {
+    color: #D0BB79;
 }
-.hrWido{
-border:1px dashed #D0BB79;
-margin-top:15px
+
+.hrWido {
+    border: 1px dashed #D0BB79;
+    margin-top: 15px
 }
-/* .hrWido::before{
-position: absolute;
-content:'';
-border:1px solid #D0BB79;
-height:15px;
-width:15px;
-right:0;
-top:18%;
-border-radius:50%;
-} */
-.card-bg-dark{
+
+.card-bg-dark {
     background-color: #12151D;
-    color:#ffffff;
-    border-radius:0;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+/*  */
+@media only screen and (max-width: 600px) {
+    .content_section {
+        padding: 10px 5px;
+    }
 }
