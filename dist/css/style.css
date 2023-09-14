@@ -231,8 +231,8 @@ body {
     position: absolute;
     bottom: 0%;
     height: 61.6vh;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    /* background: rgb(0, 0, 0); */
+    background: rgba(0, 0, 0, 0.9);
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
