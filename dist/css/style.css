@@ -3,6 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+:root{
+--light-black-color:#0C0E16;
+--white-color:#ffffff;
+--golden-color:#d0bb79;
+--gray-color:#8D8D8C;
+
+}
 
 body {
     text-decoration: none;
