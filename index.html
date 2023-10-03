@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../dist/css/style.css">
     <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -52,7 +53,7 @@
             <div class="col-md-6">
                 <div class="profile">
                     <img src="./dist/img/profile.webp" class="w-100" alt="">
-                    <span class="sun"><ion-icon name="sunny-outline"></ion-icon></span>
+                    <span class="sun"><i id="sunIcon" class="bi bi-brightness-high-fill"></i></span>
                 </div>
             </div>
         </div>
@@ -62,14 +63,38 @@
     <script>
         var typed = new Typed(".typed2", {
             strings: [
-                "Web Designer",
-                "Web Developer"
+                "Frontend Developer",
+                "Backend developer"
             ],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true
         });
+        // display a daytime & nighttime icon 
     </script>
+    <script>
+        function updateIcon() {
+          const currentTime = new Date();
+          const currentHour = currentTime.getHours();
+    
+          const sunIcon = document.getElementById('sunIcon');
+    
+          if (currentHour >= 6 && currentHour < 18) {
+            // It's daytime, so display the "brightness-high-fill" icon
+            sunIcon.className = 'bi bi-sun-fill sun-icon';
+          } else {
+            // It's nighttime, so you can change the icon to something else or hide it
+            // For example, you can use "bi-moon-stars" for nighttime:
+            sunIcon.className = 'bi bi-moon-stars sun-icon';
+          }
+        }
+    
+        // Call the function to set the initial icon
+        updateIcon();
+    
+        // Update the icon every minute
+        setInterval(updateIcon, 60000); // 60000 milliseconds = 1 minute
+      </script>
     <script src="../dist/js/bootstrap.min.js"></script>
     <script src="../dist/js/script.js"></script>
 </body>
