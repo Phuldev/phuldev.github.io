@@ -15,7 +15,7 @@
 body {
     text-decoration: none;
     list-style: none;
-    background-color: #0C0E16;
+    background-color: #1C1C20;
     height: 100vh;
 }
 
@@ -138,9 +138,9 @@ body {
     z-index: -1;
 }
 
-.my_intro {
+/* .my_intro {
     text-align: center;
-}
+} */
 
 .my_intro h5 {
     color: #eee;
@@ -213,6 +213,10 @@ body {
 @media only screen and (max-width: 600px) {
     .content_section {
         padding: 10px 5px;
+    }
+    .sectionHeadingIntro {
+        padding:0px;
+        margin:0px;
     }
 }
 

@@ -47,7 +47,7 @@
                     </ul>
                 </div>
                 <div class="mt-4">
-                    <a href="/src/about.html" class="btn btn-outline-light fw-bold">About Me! </a>
+                    <a href="/src/about.html" class="btn rounded-0 btn-outline-light fw-bold">About Me! </a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -74,27 +74,27 @@
     </script>
     <script>
         function updateIcon() {
-          const currentTime = new Date();
-          const currentHour = currentTime.getHours();
-    
-          const sunIcon = document.getElementById('sunIcon');
-    
-          if (currentHour >= 6 && currentHour < 18) {
-            // It's daytime, so display the "brightness-high-fill" icon
-            sunIcon.className = 'bi bi-sun-fill sun-icon';
-          } else {
-            // It's nighttime, so you can change the icon to something else or hide it
-            // For example, you can use "bi-moon-stars" for nighttime:
-            sunIcon.className = 'bi bi-moon-stars sun-icon';
-          }
+            const currentTime = new Date();
+            const currentHour = currentTime.getHours();
+
+            const sunIcon = document.getElementById('sunIcon');
+
+            if (currentHour >= 6 && currentHour < 18) {
+                // It's daytime, so display the "brightness-high-fill" icon
+                sunIcon.className = 'bi bi-sun-fill sun-icon';
+            } else {
+                // It's nighttime, so you can change the icon to something else or hide it
+                // For example, you can use "bi-moon-stars" for nighttime:
+                sunIcon.className = 'bi bi-moon-stars sun-icon';
+            }
         }
-    
+
         // Call the function to set the initial icon
         updateIcon();
-    
+
         // Update the icon every minute
         setInterval(updateIcon, 60000); // 60000 milliseconds = 1 minute
-      </script>
+    </script>
     <script src="../dist/js/bootstrap.min.js"></script>
     <script src="../dist/js/script.js"></script>
 </body>
