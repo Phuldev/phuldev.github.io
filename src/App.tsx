@@ -111,19 +111,19 @@ function App() {
       <section id="home" className="min-h-screen flex items-center justify-center pt-16">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">John Doe</span>
+            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Phuldev Mandal</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-600 dark:text-gray-300">
-            Full Stack Developer & UI/UX Designer
+            Full Stack Developer 
           </p>
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="https://github.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <a href="https://github.com/Phuldev" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
               <Github className="w-8 h-8" />
             </a>
-            <a href="https://linkedin.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <a href="https://www.linkedin.com/in/phuldev-mandal-7b602733a/" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
               <Linkedin className="w-8 h-8" />
             </a>
-            <a href="mailto:example@email.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+            <a href="mailto:phuldevmandal20@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
               <Mail className="w-8 h-8" />
             </a>
           </div>
@@ -226,7 +226,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-800 py-8">
         <div className="container mx-auto px-6 text-center text-gray-600 dark:text-gray-300">
-          <p>© 2025 John Doe. All rights reserved.</p>
+          <p>© 2025 Phuldev Mandal. All rights reserved.</p>
         </div>
       </footer>
     </div>
