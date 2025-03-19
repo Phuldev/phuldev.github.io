@@ -1,58 +1,58 @@
+import { Brain, ChevronDown, Code, Github, Linkedin, Mail, User } from 'lucide-react';
 import React from 'react';
-import { Github, Linkedin, Mail, ChevronDown, Code, Brain, User, MessageSquare } from 'lucide-react';
-import { ThemeToggle } from './components/ThemeToggle';
-import { ProjectCard } from './components/ProjectCard';
 import { ContactForm } from './components/ContactForm';
 import { MobileMenu } from './components/MobileMenu';
+import { ProjectCard } from './components/ProjectCard';
+import { ThemeToggle } from './components/ThemeToggle';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with React and Node.js',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176375c?auto=format&fit=crop&q=80&w=1000',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    title: 'Metamax Studio',
+    description: 'Delivering wholesome integrated design & marketing solutions to clients all over the world.',
+    image: '/assets/image/products/metamaxstudio.jpg',
+    tags: ['Laravel', 'Boostrap', 'Javascript', 'PHP'],
+    githubUrl: 'https://github.com/Phuldev',
+    liveUrl: 'https://metamaxstudio.com.au/',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates',
-    image: 'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&q=80&w=1000',
-    tags: ['React', 'Firebase', 'Tailwind CSS'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    title: 'International Restwell',
+    description: 'Experience the difference with our team of passionate and innovative leaders in the industry.',
+    image: '/assets/image/products/InternationalRestwell.jpg',
+    tags: ['Laravel', 'Boostrap', 'Javascript', 'PHP'],
+    githubUrl: 'https://github.com/Phuldev',
+    liveUrl: 'https://www.irwservices.com.au/',
   },
   {
-    title: 'AI Image Generator',
-    description: 'An AI-powered image generation tool using stable diffusion',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000',
-    tags: ['Python', 'PyTorch', 'React', 'FastAPI'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    title: 'उच्च शिक्षालय तथा माध्यमिक विद्यालय सङ्घ नेपाल',
+    description: 'Higher Institutions and Secondary Schools’ Association Nepal (HISSAN) was established in 2053 BS (1997 AD) as an umbrella organization of private schools and colleges that are running classes from grade nine to university level throughout Nepal.',
+    image: '/assets/image/products/hissankathmandu.jpg',
+    tags: ['Laravel', 'Boostrap', 'Javascript', 'PHP'],
+    githubUrl: 'https://github.com/Phuldev',
+    liveUrl: 'https://hissankathmandu.org/',
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'Real-time analytics dashboard for social media management',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000',
-    tags: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    title: 'Garima Florist',
+    description: 'Garima Florist & Events is an event planning company doing business since 15 years, providing complete planning, consulting, and supervision of any events. Garima Florist & Events provides its clients with spectacular events through creativity and uniqueness based on individual tastes and preferences with the ultimate goal of making your design-specific event a most elegant, unique, and memorable experience.',
+    image: '/assets/image/products/garimaflorist.jpg',
+    tags: ['Laravel', 'Boostrap', 'Javascript', 'PHP'],
+    githubUrl: 'https://github.com/Phuldev',
+    liveUrl: 'https://garimaflorist.com/',
   },
   {
-    title: 'Fitness Tracking App',
-    description: 'Mobile-first fitness tracking application with workout plans',
-    image: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=1000',
-    tags: ['React Native', 'Redux', 'Node.js', 'MongoDB'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    title: 'Zin Pesa Nepal',
+    description: 'Established in 2021 A.D. by professionals having decade long experience and expertise in the abroad education counseling sector, Z. Pesa Nepal Pvt. Ltd. (Zin Pesa Nepal) of the leading and most motivating education consultancies incorporated under the office of the Company Registrar and Ministry of Social Development of Bagmati Province, Nepal. Zin is authorized to hold education consultancy services, test preparation classes, and Language Classes.',
+    image: '/assets/image/products/zinpesanepal.jpg',
+    tags: ['Laravel', 'Boostrap', 'Javascript', 'PHP'],
+    githubUrl: 'https://github.com/Phuldev',
+    liveUrl: 'https://zinpesanepal.com/',
   },
   {
-    title: 'Weather Forecast App',
-    description: 'Real-time weather forecasting with interactive maps',
-    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=1000',
-    tags: ['React', 'OpenWeatherMap API', 'Mapbox', 'TypeScript'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+    title: 'Ashishcrafts',
+    description: 'Rooted in the heart of the Himalayas and bridging cultures through craftsmanship, Ashish Crafts and Creations is a globally recognized manufacturer and exporter of exquisite handmade woolen felt products. With a dual presence in Nepal (where our artisans craft every piece) and the USA (where we connect with the world), we unite ancient traditions with modern innovation to create ethical, eco-friendly, and uniquely beautiful products that honor Nepal’s rich cultural heritage.',
+    image: '/assets/image/products/ashishcrafts.jpg',
+    tags: ['Laravel', 'Boostrap', 'Javascript', 'PHP'],
+    githubUrl: 'https://github.com/Phuldev',
+    liveUrl: 'https://ashishcrafts.com/',
   }
 ];
 
@@ -60,7 +60,7 @@ const sections = ['home', 'about', 'projects', 'skills', 'contact'];
 
 function App() {
   const [activeSection, setActiveSection] = React.useState('home');
-  const [visibleProjects, setVisibleProjects] = React.useState(4);
+  const [visibleProjects, setVisibleProjects] = React.useState(6);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -77,22 +77,21 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
       <ThemeToggle />
-      
+
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <span className="text-2xl font-bold">Portfolio</span>
+            <span className="text-2xl font-bold">PM</span>
             <div className="hidden md:flex items-center space-x-8">
               {sections.map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`capitalize ${
-                    activeSection === section
+                  className={`capitalize ${activeSection === section
                       ? 'text-blue-600 dark:text-blue-400'
                       : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
-                  }`}
+                    }`}
                 >
                   {section}
                 </button>
@@ -114,7 +113,7 @@ function App() {
             Hi, I'm <span className="text-blue-600 dark:text-blue-400">Phuldev Mandal</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-600 dark:text-gray-300">
-            Full Stack Developer 
+            Full Stack Developer
           </p>
           <div className="flex justify-center space-x-6 mb-12">
             <a href="https://github.com/Phuldev" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
@@ -142,13 +141,11 @@ function App() {
           <h2 className="text-3xl font-bold mb-12 text-center">About Me</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg mb-6 text-gray-600 dark:text-gray-300">
-              I'm a passionate developer with 5+ years of experience in building web applications.
-              I specialize in creating beautiful, functional, and user-friendly websites that deliver
-              exceptional user experiences.
-            </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source
-              projects, or sharing my knowledge through technical writing and mentoring.
+              Looking for a web developer to build a website that will take your business to new heights?
+              With my technical expertise and creativity, I'll work with you to develop a website that's
+              visually striking, user-friendly, and optimized for search engines. Whether you're looking
+              for a simple website or a dynamic e-commerce platform, I can deliver the perfect solution
+              for your business.
             </p>
           </div>
         </div>
