@@ -192,10 +192,8 @@ function App() {
               <Brain className="w-12 h-12 mx-auto mb-4 text-blue-600 dark:text-blue-400" />
               <h3 className="text-xl font-bold mb-4">Backend</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>Node.js</li>
-                <li>Python</li>
-                <li>PostgreSQL</li>
-                <li>RESTful APIs</li>
+              <li>Php / Laravel</li>
+              <li>Node.js</li>
               </ul>
             </div>
             <div className="p-6 bg-gray-50 dark:bg-gray-700 rounded-lg text-center">
@@ -203,8 +201,6 @@ function App() {
               <h3 className="text-xl font-bold mb-4">Other</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                 <li>Git / GitHub</li>
-                <li>Docker</li>
-                <li>AWS</li>
                 <li>Agile / Scrum</li>
               </ul>
             </div>
