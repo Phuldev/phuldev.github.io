@@ -4,6 +4,7 @@ import { ContactForm } from './components/ContactForm';
 import { MobileMenu } from './components/MobileMenu';
 import { ProjectCard } from './components/ProjectCard';
 import { ThemeToggle } from './components/ThemeToggle';
+import GitHubProfile from './components/GitHubProfile';
 
 const projects = [
   {
@@ -110,7 +111,7 @@ function App() {
       <section id="home" className="min-h-screen flex items-center justify-center pt-16">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Phuldev Mandal</span>
+            Hi, I'm <span className="text-blue-600 dark:text-blue-400"><GitHubProfile username={'Phuldev'}/></span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-gray-600 dark:text-gray-300">
             Full Stack Developer
@@ -134,7 +135,6 @@ function App() {
           </button>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-6">
