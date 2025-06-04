@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { socialLinks } from "@/lib/nav-data"
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 export default function HeroSection() {
