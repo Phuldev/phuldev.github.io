@@ -3,7 +3,7 @@ export const navLinks = [
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
+  // { href: "/blog", label: "Blog" },
 ]
 
 export const socialLinks = [
