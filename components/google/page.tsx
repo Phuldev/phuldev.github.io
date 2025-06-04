@@ -1,26 +1,31 @@
-
 'use client'
+
+import { usePathname } from 'next/navigation'
 import Script from 'next/script'
-import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-const GA_MEASUREMENT_ID = 'G-G-G97S196JFD'
+const GA_MEASUREMENT_ID = 'G-G97S196JFD'
+
+declare global {
+  interface Window {
+    gtag?: (
+      command: 'config' | 'event' | 'js',
+      targetIdOrEventName: string | Date,
+      config?: Record<string, unknown>
+    ) => void
+  }
+}
 
 export default function GoogleAnalytics() {
-  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      (window as any).gtag?.('config', GA_MEASUREMENT_ID, {
-        page_path: url,
+    if (window.gtag) {
+      window.gtag('config', GA_MEASUREMENT_ID, {
+        page_path: pathname,
       })
     }
-
-    router.events.on('routeChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
+  }, [pathname])
 
   return (
     <>
@@ -35,6 +40,7 @@ export default function GoogleAnalytics() {
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', '${GA_MEASUREMENT_ID}', {
               page_path: window.location.pathname,
