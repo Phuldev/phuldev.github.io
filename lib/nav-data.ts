@@ -3,7 +3,7 @@ export const navLinks = [
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
-  // { href: "/blog", label: "Blog" },
+  { href: "https://phuldevmandal20.medium.com/", label: "My blog" },
 ]
 
 export const socialLinks = [
