@@ -1,9 +1,71 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, Linkedin, Github } from "lucide-react"
 import { contactInfo } from "@/lib/contact-data"
 
 export default function ContactSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+
+  const botToken = "AAHNQUUk8Ic77HCK5H-AJeCSQXNn6imD_wQ"
+  const chatId = "7750742185"
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target
+    setFormData((prev) => ({ ...prev, [id]: value }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+
+    const text = `
+New Contact Message:
+Name: ${formData.name}
+Email: ${formData.email}
+Subject: ${formData.subject}
+Message: ${formData.message}
+    `
+
+    try {
+      const res = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text,
+        }),
+      })
+
+      if (res.ok) {
+        setSuccess(true)
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        console.error("Failed to send message", await res.json())
+      }
+    } catch (error) {
+      console.error("Telegram error:", error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <section id="contact" className="py-16 md:py-24">
       <div className="container space-y-8">
@@ -16,7 +78,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <Card>
             <CardContent className="p-6 space-y-4">
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
@@ -24,7 +86,10 @@ export default function ContactSection() {
                     </label>
                     <input
                       id="name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="flex h-10 w-full rounded-md border px-3 py-2 text-sm"
                       placeholder="Your name"
                     />
                   </div>
@@ -35,7 +100,10 @@ export default function ContactSection() {
                     <input
                       id="email"
                       type="email"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="flex h-10 w-full rounded-md border px-3 py-2 text-sm"
                       placeholder="Your email"
                     />
                   </div>
@@ -46,7 +114,10 @@ export default function ContactSection() {
                   </label>
                   <input
                     id="subject"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="flex h-10 w-full rounded-md border px-3 py-2 text-sm"
                     placeholder="Subject"
                   />
                 </div>
@@ -56,14 +127,24 @@ export default function ContactSection() {
                   </label>
                   <textarea
                     id="message"
-                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="flex min-h-[120px] w-full rounded-md border px-3 py-2 text-sm"
                     placeholder="Your message"
                   />
                 </div>
-                <Button className="w-full">Send Message</Button>
+                <Button className="w-full" type="submit" disabled={loading}>
+                  {loading ? "Sending..." : "Send Message"}
+                </Button>
+                {success && (
+                  <p className="text-green-600 text-sm pt-2">Message sent successfully via Telegram!</p>
+                )}
               </form>
             </CardContent>
           </Card>
+
+          {/* Right Column with Contact Info */}
           <div className="space-y-6">
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Contact Information</h3>
