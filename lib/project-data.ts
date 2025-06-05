@@ -7,7 +7,6 @@ export const projects: Project[] = [
     description: 'Rooted in the heart of the Himalayas and bridging cultures through craftsmanship, Ashish Crafts and Creations is a globally recognized manufacturer and exporter of exquisite handmade woolen felt products. With a dual presence in Nepal (where our artisans craft every piece) and the USA (where we connect with the world), we unite ancient traditions with modern innovation to create ethical, eco-friendly, and uniquely beautiful products that honor Nepal’s rich cultural heritage.',
     image: '/image/products/ashishcrafts.jpg',
     tags: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://ashishcrafts.com/',
   },
   {
@@ -16,7 +15,6 @@ export const projects: Project[] = [
     description: 'Experience the difference with our team of passionate and innovative leaders in the industry.',
     image: '/image/products/InternationalRestwell.jpg',
     tags: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://www.irwservices.com.au/',
   },
   {
@@ -25,7 +23,6 @@ export const projects: Project[] = [
     description: 'Higher Institutions and Secondary Schools’ Association Nepal (HISSAN) was established in 2053 BS (1997 AD) as an umbrella organization of private schools and colleges that are running classes from grade nine to university level throughout Nepal.',
     image: '/image/products/hissankathmandu.jpg',
     tags: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://hissankathmandu.org/',
   },
   {
@@ -34,7 +31,6 @@ export const projects: Project[] = [
     description: 'Established in 2021 A.D. by professionals having decade-long experience and expertise in the abroad education counseling sector, Z. Pesa Nepal Pvt. Ltd. (Zin Pesa Nepal) is one of the leading and most motivating education consultancies incorporated under the office of the Company Registrar and Ministry of Social Development of Bagmati Province, Nepal. Zin is authorized to hold education consultancy services, test preparation classes, and language classes.',
     image: '/image/products/zinpesanepal.jpg',
     tags: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://zinpesanepal.com/',
   },
   {
@@ -43,7 +39,6 @@ export const projects: Project[] = [
     description: 'Garima Florist & Events is an event planning company doing business since 15 years, providing complete planning, consulting, and supervision of any events. Garima Florist & Events provides its clients with spectacular events through creativity and uniqueness based on individual tastes and preferences with the ultimate goal of making your design-specific event a most elegant, unique, and memorable experience.',
     image: '/image/products/garimaflorist.jpg',
     tags: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://garimaflorist.com/',
   },
   {
@@ -52,7 +47,6 @@ export const projects: Project[] = [
     description: 'Delivering wholesome integrated design & marketing solutions to clients all over the world.',
     image: '/image/products/metamaxstudio.jpg',
     tags: ['Laravel', 'Bootstrap', 'JavaScript', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://metamaxstudio.com.au/',
   },
   {
@@ -61,7 +55,6 @@ export const projects: Project[] = [
     description: 'Looking for work? Need to hire someone? Kamkaaz is your all-in-one platform that connects job seekers and employers across Nepal—quickly, simply, and fairly. Whether you’re educated or uneducated, skilled or unskilled, experienced or just starting out, Kamkaaz is built for everyone, without discrimination. We believe everyone deserves a chance, and we’re here to make it happen.',
     image: '/image/products/kamkaaz.jpg',
     tags: ['Laravel', 'PHP'],
-    github: 'https://github.com/Phuldev',
     demo: 'https://play.google.com/store/apps/details?id=com.dwashkarma.kamkaaz&pcampaignid=web_share',
   },
   {
@@ -70,7 +63,6 @@ export const projects: Project[] = [
     description: 'Naasa X: The Future of Trading is set to ignite your trading journey like never before.',
     image: '/image/products/x-naasa.jpg',
     tags: ['NextJs', 'Shadcn', 'TradingView', 'Tailwind CSS'],
-    github: '',
     demo: 'https://x.naasasecurities.com.np/',
   },
   {
@@ -79,7 +71,6 @@ export const projects: Project[] = [
     description: 'Waterflow Technology is a leading provider of innovative technology solutions for the water and wastewater industry. Our mission is to help our clients optimize their operations, reduce costs, and improve service delivery through the use of advanced technology.',
     image: '/image/products/waterflow.jpg',
     tags: ['Wordpres', 'PHP', 'Boostrap'],
-    github: '',
     demo: 'https://waterflow.technology/',
   }
 ]
