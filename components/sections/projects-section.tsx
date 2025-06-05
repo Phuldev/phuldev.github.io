@@ -1,13 +1,13 @@
 "use client"
 
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Github, ExternalLink } from "lucide-react"
 import { projects } from "@/lib/project-data"
+import { ExternalLink } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { useState } from "react"
 
 export default function ProjectsSection() {
   // Sort projects by latest (assuming latest are at the end)
@@ -53,13 +53,10 @@ export default function ProjectsSection() {
                 </div>
                 <div className="flex gap-4">
                   <Button variant="outline" size="sm" asChild>
-                    <Link href={project.github}>
-                      <Github className="mr-2 h-4 w-4" /> Code
-                    </Link>
                   </Button>
                   <Button size="sm" asChild>
                     <Link href={project.demo} target="_blank">
-                      <ExternalLink className="mr-2 h-4 w-4" /> Demo
+                      <ExternalLink className="mr-2 h-4 w-4" /> View Project
                     </Link>
                   </Button>
                 </div>
